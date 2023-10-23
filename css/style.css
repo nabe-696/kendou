@@ -8,6 +8,7 @@ body {
 h1 {
   font-size: 24px;
   
+  
 }
 h2 {
   margin-top: 0;
@@ -17,6 +18,7 @@ h2 {
 .choices {
   display: flex;
   justify-content: center;
+  
 }
 
 .choice {
@@ -24,6 +26,13 @@ h2 {
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
+  background-color: rgba(218, 165, 32, 0.15);
+  color: rgb(120, 107, 38);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+.choice:hover {
+  background-color: rgba(164, 144, 29, 0.499);
 }
 
 #resultText {
@@ -68,4 +77,34 @@ h2 {
   margin: 5px 10px;
   padding-bottom: 2px;
   padding-top: 2px;
+}
+
+.yaya {
+  margin: 40px 20px;
+  width: 160px;
+  height: 50px;
+  color: rgba(57, 79, 120, 0.999);
+  background-color: rgba(255, 127, 80, 0.939);
+  font-weight: 1000;
+
+}
+.yaya:hover {
+  background-color: rgba(203, 203, 77, 0.696);
+}
+
+.rara {
+  margin: 40px 20px;
+  width: 160px;
+  height: 50px;
+  color: rgba(57, 79, 120, 0.999);
+  background-color: rgba(255, 80, 235, 0.242);
+  font-weight: 1000;
+}
+.rara:hover {
+  background-color: rgba(203, 77, 167, 0.356);
+}
+
+p {
+  margin: 9px;
+  font-family: 'Times New Roman', Times, serif;
 }
