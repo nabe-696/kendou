@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>剣道じゃんけん</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="f_body">
-   <h1>剣道じゃんけん</h1>
+<body>
+    <h1>剣道じゃんけん</h1>
+    <div id="player">
+        <h2>プレイヤー</h2>
+        <div class="choices">
+            <button id="playerMen" class="choice">面</button>
+            <button id="playerKote" class="choice">小手</button>
+            <button id="playerDo" class="choice">胴</button>
+            <button id="playerKoteMen" class="choice">小手面</button>
+        </div>
 
-  <div class="f_head">
-  <img class="f_img" src="https://ekakisalue.blush.jp/ken0702.jpg" alt="" width="360px" height="260px">
-</div>
-<div id="f_btn">
-  <button class="yaya" onclick="window.open('index.html')">GAME START</button>
-</div>  
-<h3>強さ</h3>
-<p>面は小手面より強い</p>
-<p>小手は面、胴より強い</p>
-<p>胴は面より強い</p>
-<p>小手面は小手より強い</p>
-<p>小手面は胴と引き分けである</p>
+       
+        
+    </div>
 
+    <div class="imgbox">
+      
+      <div class="imgbox1">
 
+      <div>
+        <img  id="img1" width="230px" height="260px" src="https://ekakisalue.blush.jp/ken0902.jpg" alt="">
+      </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <div class="text1">"player"</div>
+    </div>
 
-<script>
-   
+    <div>
+      <img class="vs" width="160px" height="200px" src="https://thumb.ac-illust.com/1b/1b65b4f8e794f7e9e145a7de3380fcde_t.jpeg" alt="">
+    </div>
 
-</script>
+      <div class="imgbox2">
+
+        <div>
+          <img id="img2" width="230px" height="260px" src="https://ekakisalue.blush.jp/ken0902.jpg" alt="">
+        </div>
+  
+        <div class="text2">
+          "computer "
+  
+        </div>
+    </div>
+
+      
+      <!-- <div id="img_men"><img src="" alt=""></div>
+      <div id="img_kote"><img src="" alt=""></div>
+      <div id="img_do"><img src="" alt=""></div>
+      <div id="img_kotemen"><img src="" alt=""></div> -->
+    </div>
+
+    
+
+    
+      <div id="computer">
+          <h2>コンピューター</h2>
+          <div class="choices">
+              <button id="computerChoice" class="choice">?</button>
+          </div>
+      </div>
+
+      <div class="chan">
+      <div id="result">
+          <h2>結果</h2>
+          <p id="resultText"></p>
+          <p id="scoreText">プレイヤー: 0 勝 / コンピューター: 0 勝</p>
+      </div>
+
+      <button class="rara" onclick="window.open('index1.html')">戻る</button>
+
+  </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="app.js"></script>
 </html>
